@@ -1,0 +1,34 @@
+.farma{
+    width: 10%;
+}
+
+.backgr{
+    background-color: rgb(233, 191, 112);
+}
+
+.searching{
+    margin-left: 80%;
+}
+
+.tablaVenta{
+    margin: auto;
+}
+
+.ppp{
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    margin-top: 3%;
+    font-size: 160%;
+}
+
+.efectoCard{
+    width: 60%;
+    margin: auto;
+}
+
+.alinear{
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
