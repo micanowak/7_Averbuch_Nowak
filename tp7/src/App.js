@@ -18,6 +18,7 @@ function App() {
       response.data.products.forEach(element => {
         setListaProductos(...listaProductos, element)
       });
+      console.log(listaProductos);
     })
     .catch(error => {
       // handle error
@@ -33,8 +34,8 @@ function App() {
         <Routes>
           <Route path='/' element={<Layout />}>
             <Route index element={<Home />}></Route>
-            <Route path='/Productos:listaProductos' element={<Productos />}></Route>
-            <Route path='/DetalleProducto:id' element={<DetalleProducto />}></Route>
+            <Route path='/Productos' element={<Productos />}></Route> {/*:listaProductos*/}
+            <Route path='/DetalleProducto' element={<DetalleProducto />}></Route> {/*:id*/}
             <Route path='/Contacto' element={<Contacto />}></Route>
             <Route path="*" element={<h1>404</h1>}></Route>
           </Route>

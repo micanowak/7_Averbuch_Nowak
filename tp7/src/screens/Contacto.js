@@ -1,4 +1,7 @@
 const Contacto = () => {
+    
+    console.log("en Contacto");
+    
     return (
         <form>
             <label>
