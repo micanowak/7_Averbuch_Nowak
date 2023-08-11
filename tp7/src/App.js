@@ -15,11 +15,13 @@ function App() {
   useEffect(() => {
     axios.get('https://dummyjson.com/products')
       .then(response => {
-        //console.log(response);
-        response.data.products.forEach(element => {
-          setListaProductos(...listaProductos, element)
-        });
-        console.log(listaProductos);
+
+        //console.log(response.data.products);
+        //response.data.products.forEach(element => {
+          //setListaProductos(...listaProductos, element)
+          //listaProductos.concat(element);
+        //});
+        setListaProductos(response.data.products);
       })
       .catch(error => {
         console.log(error);
@@ -31,7 +33,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Layout />}>
-            <Route path='/Home' element={<Home />}></Route>
+            <Route path='/Home' index element={<Home products={listaProductos} />}></Route>
             <Route path='/Productos' element={<Productos />}></Route> {/*:listaProductos*/}
             <Route path='/DetalleProducto' element={<DetalleProducto />}></Route> {/*:id*/}
             <Route path='/Contacto' element={<Contacto />}></Route>

@@ -1,7 +1,9 @@
 import React from 'react';
 
-const Products = () => {
-    <p>Hola esto son products</p>
+const Products = ({products}) => {
+    return (
+        products.map(p => <p>Hola esto es un producto llamado {p.title}</p>)
+    )
 };
 
 export default Products;

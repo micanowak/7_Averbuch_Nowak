@@ -2,7 +2,7 @@
 //import { Text } from 'react';
 import Products from "../components/Products.js";
 import Carousel from "../components/Carousel.js";
-const Home = (/*{products}*/) => {
+const Home = ({products}) => {
     
     console.log("en Home");
     
@@ -11,7 +11,7 @@ const Home = (/*{products}*/) => {
         <div className="container">
             <p>Home</p>
             <Carousel></Carousel>
-            <Products></Products>
+            <Products products={products}></Products>
         </div>
     );
 }
