@@ -1,0 +1,19 @@
+.tituloProd{
+    text-align: center;
+}
+.nombreProd{
+color:rgb(223, 61, 88);
+}
+.imgs{
+     /* Mantiene la proporción de aspecto original */
+  max-width: 50%; /* Asegura que la imagen no exceda el ancho del contenedor */
+  align-items: center;
+  align-content: center;
+}
+.containerProd{
+    column-count: 3;
+}
+.container{
+    border-color: blue;
+    border-width: 30px;
+}

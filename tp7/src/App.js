@@ -1,12 +1,12 @@
 import './App.css';
-import Home from './screens/Home';
+import Home from './screens/Home/Home';
 import Contacto from './screens/Contacto';
 import DetalleProducto from './screens/DetalleProducto';
 import Productos from './screens/Productos';
 import axios from 'axios';
 import { /*Text,*/ useState, useEffect } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import Layout from './screens/Layout';
+import Layout from './screens/Layout/Layout';
 
 function App() {
 

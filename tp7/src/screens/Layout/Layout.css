@@ -1,0 +1,9 @@
+.navBar{
+    background-color: #e9d6d6;
+    color: red;
+    padding: 10px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;  justify-content: space-around;
+
+}
