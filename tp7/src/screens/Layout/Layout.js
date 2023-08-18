@@ -1,10 +1,11 @@
 import {Link, Outlet} from 'react-router-dom';
 import '../Layout/Layout.css';
+//import logoSuper from '../../assets/logoSuper.png';
 const Layout = () => {
     return (
         <>
             <nav className='navBar'>
-                {/* logo de la página */}
+                {/*<img src={logoSuper} alt='logo' className='logoSuper'></img>*/}
                 <Link to='/Home' className='links'>Home</Link>
                 <br></br>
                 <Link to='/Productos' className='links'>All Products</Link>
